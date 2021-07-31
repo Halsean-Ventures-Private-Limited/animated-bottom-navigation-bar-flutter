@@ -19,6 +19,7 @@ class NavigationBarItem extends StatelessWidget {
 
   NavigationBarItem({
     required this.isActive,
+    required this.index,
     required this.bubbleRadius,
     required this.maxBubbleRadius,
     required this.bubbleColor,
