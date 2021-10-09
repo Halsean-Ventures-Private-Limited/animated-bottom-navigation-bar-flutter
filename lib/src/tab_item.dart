@@ -26,7 +26,7 @@ class TabItem extends StatelessWidget {
     return SvgPicture.asset(
       iconData,
       color: isActive ? activeColor : inactiveColor,
-      size: iconSize,
+      height: iconSize,
     );
   }
 }
