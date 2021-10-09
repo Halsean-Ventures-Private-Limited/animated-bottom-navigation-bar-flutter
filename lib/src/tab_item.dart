@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class TabItem extends StatelessWidget {
-  final IconData? iconData;
+  final String? iconData;
   final double? iconSize;
   final bool isActive;
   final Color? activeColor;
@@ -22,7 +23,7 @@ class TabItem extends StatelessWidget {
   Widget build(BuildContext context) => child ?? _buildDefaultTab();
 
   Widget _buildDefaultTab() {
-    return Icon(
+    return SvgPicture.asset(
       iconData,
       color: isActive ? activeColor : inactiveColor,
       size: iconSize,
